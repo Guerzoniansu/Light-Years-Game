@@ -23,7 +23,7 @@ namespace ly
 	}
 	Actor::~Actor()
 	{
-		LOG("Actor destroyed");
+		
 	}
 	void Actor::BeginPlayInternal()
 	{
@@ -178,11 +178,11 @@ namespace ly
 	}
 	void Actor::onActorBeginOverlap(Actor* other)
 	{
-		LOG("Overlapped");
+		
 	}
 	void Actor::onActorEndOverlap(Actor* other)
 	{
-		LOG("Overlap finished");
+		
 	}
 	void Actor::Destroy()
 	{

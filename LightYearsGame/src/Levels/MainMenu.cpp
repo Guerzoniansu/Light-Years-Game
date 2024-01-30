@@ -2,6 +2,7 @@
 #include "widgets/MainMenuHUD.h"
 #include "framework/application.h"
 #include "Levels/levelone.h"
+#include "framework/BackDropActor.h"
 
 namespace ly
 {
@@ -15,6 +16,7 @@ namespace ly
 	{
 		mMainMenuHUD.lock()->onStartButtonClicked.bindAction(getWeakRef(), &MainMenu::startGame);
 		mMainMenuHUD.lock()->onQuitButtonClicked.bindAction(getWeakRef(), &MainMenu::quitGame);
+		spawnActor<BackDropActor>("SpaceShooterRedux/mainMenuBg.png", sf::Vector2f{0.f, 0.f});
 	}
 	void MainMenu::startGame()
 	{

@@ -1,5 +1,6 @@
 #include "Player/player.h"
 #include "Player/playerSpaceship.h"
+#include "weapon/shooter.h"
 
 namespace ly
 {
@@ -42,6 +43,7 @@ namespace ly
 	void Player::addScore(unsigned int amt)
 	{
 		if (amt > 0)
+
 		{
 			mScore += amt;
 			onScoreChange.broadCast(mScore);

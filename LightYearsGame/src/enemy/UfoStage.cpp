@@ -2,6 +2,7 @@
 #include "framework/timer.h"
 #include "enemy/ufo.h"
 #include "framework/math.h"
+#include "weapon/bulletshooter.h"
 
 namespace ly
 {

@@ -2,6 +2,7 @@
 #include "enemy/boss.h"
 #include "framework/world.h"
 #include "framework/actor.h"
+#include "weapon/bulletshooter.h"
 
 namespace ly
 {

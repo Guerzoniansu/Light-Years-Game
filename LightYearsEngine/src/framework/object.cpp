@@ -24,11 +24,11 @@ namespace ly
 	}
 	weak<Object> Object::getWeakRef()
 	{
-		return weak_from_this();
+		return shared_from_this();
 	}
 	weak<const Object> Object::getWeakRef() const
 	{
-		return weak_from_this();
+		return shared_from_this();
 	}
 	unsigned int Object::getNextAvailableId()
 	{
